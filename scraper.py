@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL de la wishlist pública
-wishlist_url = "https://www.buscalibre.cl/v2/carro-de-compras-guardado_1785547_l.html?afiliado=157c1e5c984414edb8e5"
+wishlist_url = "URL_A_TU_WISHLIST"
 
 # Encabezados para simular un navegador
 headers = {
