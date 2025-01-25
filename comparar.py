@@ -6,7 +6,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # URL de la wishlist pública
-wishlist_url = "https://www.buscalibre.cl/v2/carro-de-compras-guardado_1785547_l.html?afiliado=157c1e5c984414edb8e5"
+wishlist_url = "URL_A_TU_WISHLIST"
 
 # Archivo JSON con los precios almacenados
 json_file = "wishlist_data.json"
@@ -19,8 +19,8 @@ headers = {
 # Configuración del correo
 SMTP_SERVER = "smtp.gmail.com"  # Cambiar si usas otro proveedor (ej.: Outlook usa smtp.office365.com)
 SMTP_PORT = 587
-EMAIL_ADDRESS = "loremzhitto@gmail.com"  # Reemplaza con tu correo
-EMAIL_PASSWORD = "rqqlffgtrrhekhra"       # Reemplaza con tu contraseña o contraseña de aplicación
+EMAIL_ADDRESS = ""  # Reemplaza con tu correo
+EMAIL_PASSWORD = ""       # Reemplaza con tu contraseña o contraseña de aplicación
 
 # Función para cargar los precios almacenados
 def load_stored_data():
@@ -238,7 +238,7 @@ if stored_data:
                 )
 
             # Enviar correo con las alertas de baja de precio
-            recipient_email = "veronicaalejandra1406@gmail.com"  # Cambia este correo por el destino deseado
+            recipient_email = "correo@gmail.com"  # Cambia este correo por el destino deseado
             send_email(price_changes, recipient_email)
         else:
             print("No hubo cambios en los precios.")
