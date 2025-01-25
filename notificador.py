@@ -5,8 +5,8 @@ from email.mime.multipart import MIMEMultipart
 # Configuración del correo
 SMTP_SERVER = "smtp.gmail.com"  # Cambiar si usas otro proveedor (ej.: Outlook usa smtp.office365.com)
 SMTP_PORT = 587
-EMAIL_ADDRESS = "loremzhitto@gmail.com"  # Reemplaza con tu correo
-EMAIL_PASSWORD = "rqqlffgtrrhekhra"       # Reemplaza con tu contraseña o contraseña de aplicación
+EMAIL_ADDRESS = ""  # Reemplaza con tu correo
+EMAIL_PASSWORD = ""       # Reemplaza con tu contraseña o contraseña de aplicación
 
 # Función para enviar correo
 def send_email(price_changes, recipient_email):
